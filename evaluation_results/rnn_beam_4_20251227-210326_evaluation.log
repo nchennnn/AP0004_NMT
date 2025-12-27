@@ -1,0 +1,16 @@
+2025-12-27 21:03:26,087 - INFO - Loading model from runs/20251225-170530-rnn-AdamW-lr0.002-wd0.0001-bs128-epoch100-additive-layer2-emb512-hidden512-relativePos-rmsnorm-teacher_forcing-beam/best_checkpoint.pt
+2025-12-27 21:03:26,508 - INFO - Evaluating model rnn on test set...
+2025-12-27 21:03:26,508 - INFO - Decode strategy: beam
+2025-12-27 21:03:26,509 - INFO - Beam size: 4
+2025-12-27 21:03:53,243 - INFO - Using default tokenizer.
+2025-12-27 21:03:55,134 - INFO - ================================================================================
+2025-12-27 21:03:55,134 - INFO - Test set results:
+2025-12-27 21:03:55,135 - INFO -   Test loss: 4.7720
+2025-12-27 21:03:55,135 - INFO -   BLEU: 0.0393
+2025-12-27 21:03:55,135 - INFO -   METEOR: 0.2039
+2025-12-27 21:03:55,135 - INFO -   ROUGE-1: 0.3565
+2025-12-27 21:03:55,135 - INFO -   ROUGE-2: 0.1146
+2025-12-27 21:03:55,135 - INFO -   ROUGE-L: 0.2833
+2025-12-27 21:03:55,135 - INFO - ================================================================================
+2025-12-27 21:03:55,143 - INFO - Results saved to evaluation_results/rnn_beam_4_20251227-210326.json
+2025-12-27 21:03:55,144 - INFO - Evaluation completed!

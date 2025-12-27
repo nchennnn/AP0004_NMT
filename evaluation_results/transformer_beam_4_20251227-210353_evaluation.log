@@ -1,0 +1,16 @@
+2025-12-27 21:03:53,723 - INFO - Loading model from runs/20251225-101412-transformer-AdamW-lr0.0001-wd0.0001-bs128-epoch100-additive-layer6-emb512-hidden512-absolutePos-layernorm-teacher_forcing-beam/best_checkpoint.pt
+2025-12-27 21:03:54,061 - INFO - Evaluating model transformer on test set...
+2025-12-27 21:03:54,061 - INFO - Decode strategy: beam
+2025-12-27 21:03:54,061 - INFO - Beam size: 4
+2025-12-27 21:14:40,934 - INFO - Using default tokenizer.
+2025-12-27 21:14:42,589 - INFO - ================================================================================
+2025-12-27 21:14:42,590 - INFO - Test set results:
+2025-12-27 21:14:42,590 - INFO -   Test loss: 4.4264
+2025-12-27 21:14:42,590 - INFO -   BLEU: 0.0591
+2025-12-27 21:14:42,590 - INFO -   METEOR: 0.2558
+2025-12-27 21:14:42,590 - INFO -   ROUGE-1: 0.4154
+2025-12-27 21:14:42,590 - INFO -   ROUGE-2: 0.1607
+2025-12-27 21:14:42,591 - INFO -   ROUGE-L: 0.3422
+2025-12-27 21:14:42,591 - INFO - ================================================================================
+2025-12-27 21:14:42,598 - INFO - Results saved to evaluation_results/transformer_beam_4_20251227-210353.json
+2025-12-27 21:14:42,598 - INFO - Evaluation completed!

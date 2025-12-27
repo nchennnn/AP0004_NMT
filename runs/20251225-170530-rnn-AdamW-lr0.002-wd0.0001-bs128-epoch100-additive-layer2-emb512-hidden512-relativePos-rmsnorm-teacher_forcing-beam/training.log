@@ -1,0 +1,270 @@
+2025-12-25 17:05:30,495 - INFO - Arguments: {'train_data': 'data/train_100k.jsonl', 'val_data': 'data/valid.jsonl', 'test_data': 'data/test.jsonl', 'tokenizer_name': 'utrobinmv/t5_translate_en_ru_zh_small_1024', 'tokenizer_mode': 'filtered', 'filtered_vocab_dir': 'filtered_vocab', 'model': 'rnn', 'attention': 'additive', 'emb': 512, 'hidden': 512, 'heads': 4, 'layers': 2, 'dropout': 0.25, 'pos_embedding': 'relative', 'norm_type': 'rmsnorm', 'max_pos_len': 512, 'relative_num_buckets': 32, 'relative_max_distance': 128, 'batch_size': 128, 'epochs': 100, 'lr': 0.002, 'wd': 0.0001, 'optimizer': 'AdamW', 'output': 'runs', 'rnn_training_mode': 'teacher_forcing', 'decode_strategy': 'beam', 'beam_size': 4, 'patience': 3}
+2025-12-25 17:05:30,495 - INFO - ================================================================================
+2025-12-25 17:05:30,495 - INFO - Starting training
+2025-12-25 17:05:30,496 - INFO - Model type: rnn
+2025-12-25 17:05:30,496 - INFO - Batch size: 128
+2025-12-25 17:05:30,496 - INFO - Learning rate: 0.002
+2025-12-25 17:05:30,496 - INFO - Weight decay: 0.0001
+2025-12-25 17:05:30,496 - INFO - Epochs: 100
+2025-12-25 17:05:30,496 - INFO - ================================================================================
+2025-12-25 17:07:28,660 - INFO - Epoch 1/100: Computing validation loss and metrics...
+2025-12-25 17:08:14,803 - INFO - Using default tokenizer.
+2025-12-25 17:08:16,649 - INFO - Epoch 1/100:
+2025-12-25 17:08:16,650 - INFO -   Train loss: 5.1073
+2025-12-25 17:08:16,650 - INFO -   Validation loss: 4.7243
+2025-12-25 17:08:16,650 - INFO -   BLEU: 0.0209
+2025-12-25 17:08:16,650 - INFO -   METEOR: 0.1248
+2025-12-25 17:08:16,651 - INFO -   ROUGE-1: 0.2402
+2025-12-25 17:08:16,651 - INFO -   ROUGE-2: 0.0568
+2025-12-25 17:08:16,651 - INFO -   ROUGE-L: 0.1991
+2025-12-25 17:08:17,123 - INFO -   -> Best model saved (BLEU: 0.0209)
+2025-12-25 17:10:13,239 - INFO - Epoch 2/100: Computing validation loss and metrics...
+2025-12-25 17:10:56,548 - INFO - Using default tokenizer.
+2025-12-25 17:10:57,247 - INFO - Epoch 2/100:
+2025-12-25 17:10:57,248 - INFO -   Train loss: 3.3859
+2025-12-25 17:10:57,248 - INFO -   Validation loss: 4.1373
+2025-12-25 17:10:57,248 - INFO -   BLEU: 0.0340
+2025-12-25 17:10:57,248 - INFO -   METEOR: 0.1738
+2025-12-25 17:10:57,248 - INFO -   ROUGE-1: 0.3124
+2025-12-25 17:10:57,249 - INFO -   ROUGE-2: 0.0933
+2025-12-25 17:10:57,249 - INFO -   ROUGE-L: 0.2639
+2025-12-25 17:10:57,750 - INFO -   -> Best model saved (BLEU: 0.0340)
+2025-12-25 17:12:53,757 - INFO - Epoch 3/100: Computing validation loss and metrics...
+2025-12-25 17:13:35,743 - INFO - Using default tokenizer.
+2025-12-25 17:13:36,781 - INFO - Epoch 3/100:
+2025-12-25 17:13:36,781 - INFO -   Train loss: 2.8760
+2025-12-25 17:13:36,781 - INFO -   Validation loss: 3.9377
+2025-12-25 17:13:36,781 - INFO -   BLEU: 0.0403
+2025-12-25 17:13:36,782 - INFO -   METEOR: 0.2075
+2025-12-25 17:13:36,782 - INFO -   ROUGE-1: 0.3498
+2025-12-25 17:13:36,782 - INFO -   ROUGE-2: 0.1136
+2025-12-25 17:13:36,782 - INFO -   ROUGE-L: 0.2925
+2025-12-25 17:13:37,244 - INFO -   -> Best model saved (BLEU: 0.0403)
+2025-12-25 17:15:32,489 - INFO - Epoch 4/100: Computing validation loss and metrics...
+2025-12-25 17:16:15,324 - INFO - Using default tokenizer.
+2025-12-25 17:16:15,989 - INFO - Epoch 4/100:
+2025-12-25 17:16:15,989 - INFO -   Train loss: 2.6054
+2025-12-25 17:16:15,989 - INFO -   Validation loss: 3.8364
+2025-12-25 17:16:15,989 - INFO -   BLEU: 0.0474
+2025-12-25 17:16:15,990 - INFO -   METEOR: 0.2191
+2025-12-25 17:16:15,990 - INFO -   ROUGE-1: 0.3715
+2025-12-25 17:16:15,990 - INFO -   ROUGE-2: 0.1322
+2025-12-25 17:16:15,990 - INFO -   ROUGE-L: 0.3158
+2025-12-25 17:16:16,464 - INFO -   -> Best model saved (BLEU: 0.0474)
+2025-12-25 17:18:11,829 - INFO - Epoch 5/100: Computing validation loss and metrics...
+2025-12-25 17:18:53,482 - INFO - Using default tokenizer.
+2025-12-25 17:18:54,127 - INFO - Epoch 5/100:
+2025-12-25 17:18:54,129 - INFO -   Train loss: 2.4271
+2025-12-25 17:18:54,129 - INFO -   Validation loss: 3.8221
+2025-12-25 17:18:54,130 - INFO -   BLEU: 0.0432
+2025-12-25 17:18:54,130 - INFO -   METEOR: 0.2064
+2025-12-25 17:18:54,130 - INFO -   ROUGE-1: 0.3588
+2025-12-25 17:18:54,130 - INFO -   ROUGE-2: 0.1205
+2025-12-25 17:18:54,130 - INFO -   ROUGE-L: 0.3019
+2025-12-25 17:18:54,131 - INFO -   -> No improvement in BLEU for 1 epoch(s)
+2025-12-25 17:20:50,478 - INFO - Epoch 6/100: Computing validation loss and metrics...
+2025-12-25 17:21:32,706 - INFO - Using default tokenizer.
+2025-12-25 17:21:33,330 - INFO - Epoch 6/100:
+2025-12-25 17:21:33,332 - INFO -   Train loss: 2.2953
+2025-12-25 17:21:33,332 - INFO -   Validation loss: 3.7934
+2025-12-25 17:21:33,332 - INFO -   BLEU: 0.0439
+2025-12-25 17:21:33,332 - INFO -   METEOR: 0.2104
+2025-12-25 17:21:33,332 - INFO -   ROUGE-1: 0.3702
+2025-12-25 17:21:33,333 - INFO -   ROUGE-2: 0.1298
+2025-12-25 17:21:33,333 - INFO -   ROUGE-L: 0.3090
+2025-12-25 17:21:33,333 - INFO -   -> No improvement in BLEU for 2 epoch(s)
+2025-12-25 17:23:28,395 - INFO - Epoch 7/100: Computing validation loss and metrics...
+2025-12-25 17:24:13,662 - INFO - Using default tokenizer.
+2025-12-25 17:24:14,733 - INFO - Epoch 7/100:
+2025-12-25 17:24:14,733 - INFO -   Train loss: 2.1946
+2025-12-25 17:24:14,734 - INFO -   Validation loss: 3.7818
+2025-12-25 17:24:14,734 - INFO -   BLEU: 0.0501
+2025-12-25 17:24:14,734 - INFO -   METEOR: 0.2237
+2025-12-25 17:24:14,734 - INFO -   ROUGE-1: 0.3688
+2025-12-25 17:24:14,734 - INFO -   ROUGE-2: 0.1339
+2025-12-25 17:24:14,734 - INFO -   ROUGE-L: 0.3107
+2025-12-25 17:24:15,239 - INFO -   -> Best model saved (BLEU: 0.0501)
+2025-12-25 17:26:13,361 - INFO - Epoch 8/100: Computing validation loss and metrics...
+2025-12-25 17:26:55,080 - INFO - Using default tokenizer.
+2025-12-25 17:26:55,699 - INFO - Epoch 8/100:
+2025-12-25 17:26:55,699 - INFO -   Train loss: 2.1121
+2025-12-25 17:26:55,699 - INFO -   Validation loss: 3.7803
+2025-12-25 17:26:55,699 - INFO -   BLEU: 0.0514
+2025-12-25 17:26:55,700 - INFO -   METEOR: 0.2254
+2025-12-25 17:26:55,700 - INFO -   ROUGE-1: 0.3779
+2025-12-25 17:26:55,700 - INFO -   ROUGE-2: 0.1388
+2025-12-25 17:26:55,700 - INFO -   ROUGE-L: 0.3207
+2025-12-25 17:26:56,187 - INFO -   -> Best model saved (BLEU: 0.0514)
+2025-12-25 17:28:50,311 - INFO - Epoch 9/100: Computing validation loss and metrics...
+2025-12-25 17:29:34,301 - INFO - Using default tokenizer.
+2025-12-25 17:29:34,963 - INFO - Epoch 9/100:
+2025-12-25 17:29:34,965 - INFO -   Train loss: 2.0425
+2025-12-25 17:29:34,965 - INFO -   Validation loss: 3.8428
+2025-12-25 17:29:34,965 - INFO -   BLEU: 0.0508
+2025-12-25 17:29:34,966 - INFO -   METEOR: 0.2291
+2025-12-25 17:29:34,966 - INFO -   ROUGE-1: 0.3743
+2025-12-25 17:29:34,966 - INFO -   ROUGE-2: 0.1354
+2025-12-25 17:29:34,966 - INFO -   ROUGE-L: 0.3163
+2025-12-25 17:29:34,966 - INFO -   -> No improvement in BLEU for 1 epoch(s)
+2025-12-25 17:31:28,825 - INFO - Epoch 10/100: Computing validation loss and metrics...
+2025-12-25 17:32:12,055 - INFO - Using default tokenizer.
+2025-12-25 17:32:12,700 - INFO - Epoch 10/100:
+2025-12-25 17:32:12,700 - INFO -   Train loss: 1.9862
+2025-12-25 17:32:12,700 - INFO -   Validation loss: 3.8329
+2025-12-25 17:32:12,701 - INFO -   BLEU: 0.0488
+2025-12-25 17:32:12,701 - INFO -   METEOR: 0.2250
+2025-12-25 17:32:12,701 - INFO -   ROUGE-1: 0.3750
+2025-12-25 17:32:12,701 - INFO -   ROUGE-2: 0.1375
+2025-12-25 17:32:12,701 - INFO -   ROUGE-L: 0.3120
+2025-12-25 17:32:12,701 - INFO -   -> No improvement in BLEU for 2 epoch(s)
+2025-12-25 17:34:04,887 - INFO - Epoch 11/100: Computing validation loss and metrics...
+2025-12-25 17:34:47,691 - INFO - Using default tokenizer.
+2025-12-25 17:34:48,327 - INFO - Epoch 11/100:
+2025-12-25 17:34:48,329 - INFO -   Train loss: 1.9360
+2025-12-25 17:34:48,329 - INFO -   Validation loss: 3.8634
+2025-12-25 17:34:48,330 - INFO -   BLEU: 0.0498
+2025-12-25 17:34:48,330 - INFO -   METEOR: 0.2296
+2025-12-25 17:34:48,330 - INFO -   ROUGE-1: 0.3773
+2025-12-25 17:34:48,330 - INFO -   ROUGE-2: 0.1373
+2025-12-25 17:34:48,330 - INFO -   ROUGE-L: 0.3142
+2025-12-25 17:34:48,330 - INFO -   -> No improvement in BLEU for 3 epoch(s)
+2025-12-25 17:34:48,330 - INFO -   -> Learning rate reduced from 0.002 to 0.001 due to plateau
+2025-12-25 17:36:40,488 - INFO - Epoch 12/100: Computing validation loss and metrics...
+2025-12-25 17:37:23,664 - INFO - Using default tokenizer.
+2025-12-25 17:37:24,281 - INFO - Epoch 12/100:
+2025-12-25 17:37:24,281 - INFO -   Train loss: 1.7431
+2025-12-25 17:37:24,281 - INFO -   Validation loss: 3.8248
+2025-12-25 17:37:24,282 - INFO -   BLEU: 0.0538
+2025-12-25 17:37:24,282 - INFO -   METEOR: 0.2416
+2025-12-25 17:37:24,282 - INFO -   ROUGE-1: 0.3893
+2025-12-25 17:37:24,282 - INFO -   ROUGE-2: 0.1434
+2025-12-25 17:37:24,282 - INFO -   ROUGE-L: 0.3260
+2025-12-25 17:37:24,762 - INFO -   -> Best model saved (BLEU: 0.0538)
+2025-12-25 17:39:16,441 - INFO - Epoch 13/100: Computing validation loss and metrics...
+2025-12-25 17:40:00,627 - INFO - Using default tokenizer.
+2025-12-25 17:40:01,253 - INFO - Epoch 13/100:
+2025-12-25 17:40:01,253 - INFO -   Train loss: 1.6709
+2025-12-25 17:40:01,254 - INFO -   Validation loss: 3.8663
+2025-12-25 17:40:01,254 - INFO -   BLEU: 0.0583
+2025-12-25 17:40:01,254 - INFO -   METEOR: 0.2483
+2025-12-25 17:40:01,254 - INFO -   ROUGE-1: 0.3940
+2025-12-25 17:40:01,254 - INFO -   ROUGE-2: 0.1468
+2025-12-25 17:40:01,254 - INFO -   ROUGE-L: 0.3301
+2025-12-25 17:40:01,745 - INFO -   -> Best model saved (BLEU: 0.0583)
+2025-12-25 17:41:53,764 - INFO - Epoch 14/100: Computing validation loss and metrics...
+2025-12-25 17:42:35,161 - INFO - Using default tokenizer.
+2025-12-25 17:42:35,773 - INFO - Epoch 14/100:
+2025-12-25 17:42:35,773 - INFO -   Train loss: 1.6306
+2025-12-25 17:42:35,773 - INFO -   Validation loss: 3.9205
+2025-12-25 17:42:35,774 - INFO -   BLEU: 0.0561
+2025-12-25 17:42:35,774 - INFO -   METEOR: 0.2420
+2025-12-25 17:42:35,774 - INFO -   ROUGE-1: 0.3967
+2025-12-25 17:42:35,774 - INFO -   ROUGE-2: 0.1474
+2025-12-25 17:42:35,774 - INFO -   ROUGE-L: 0.3333
+2025-12-25 17:42:35,774 - INFO -   -> No improvement in BLEU for 1 epoch(s)
+2025-12-25 17:44:27,590 - INFO - Epoch 15/100: Computing validation loss and metrics...
+2025-12-25 17:45:09,787 - INFO - Using default tokenizer.
+2025-12-25 17:45:10,392 - INFO - Epoch 15/100:
+2025-12-25 17:45:10,393 - INFO -   Train loss: 1.5961
+2025-12-25 17:45:10,393 - INFO -   Validation loss: 3.9154
+2025-12-25 17:45:10,393 - INFO -   BLEU: 0.0522
+2025-12-25 17:45:10,393 - INFO -   METEOR: 0.2436
+2025-12-25 17:45:10,393 - INFO -   ROUGE-1: 0.3963
+2025-12-25 17:45:10,394 - INFO -   ROUGE-2: 0.1435
+2025-12-25 17:45:10,394 - INFO -   ROUGE-L: 0.3270
+2025-12-25 17:45:10,394 - INFO -   -> No improvement in BLEU for 2 epoch(s)
+2025-12-25 17:47:02,098 - INFO - Epoch 16/100: Computing validation loss and metrics...
+2025-12-25 17:47:43,329 - INFO - Using default tokenizer.
+2025-12-25 17:47:43,941 - INFO - Epoch 16/100:
+2025-12-25 17:47:43,941 - INFO -   Train loss: 1.5665
+2025-12-25 17:47:43,942 - INFO -   Validation loss: 3.9639
+2025-12-25 17:47:43,942 - INFO -   BLEU: 0.0534
+2025-12-25 17:47:43,942 - INFO -   METEOR: 0.2362
+2025-12-25 17:47:43,942 - INFO -   ROUGE-1: 0.3896
+2025-12-25 17:47:43,942 - INFO -   ROUGE-2: 0.1411
+2025-12-25 17:47:43,942 - INFO -   ROUGE-L: 0.3274
+2025-12-25 17:47:43,942 - INFO -   -> No improvement in BLEU for 3 epoch(s)
+2025-12-25 17:47:43,942 - INFO -   -> Learning rate reduced from 0.001 to 0.0005 due to plateau
+2025-12-25 17:49:35,946 - INFO - Epoch 17/100: Computing validation loss and metrics...
+2025-12-25 17:50:19,341 - INFO - Using default tokenizer.
+2025-12-25 17:50:19,972 - INFO - Epoch 17/100:
+2025-12-25 17:50:19,973 - INFO -   Train loss: 1.4673
+2025-12-25 17:50:19,973 - INFO -   Validation loss: 3.9536
+2025-12-25 17:50:19,973 - INFO -   BLEU: 0.0528
+2025-12-25 17:50:19,973 - INFO -   METEOR: 0.2397
+2025-12-25 17:50:19,973 - INFO -   ROUGE-1: 0.3913
+2025-12-25 17:50:19,973 - INFO -   ROUGE-2: 0.1440
+2025-12-25 17:50:19,974 - INFO -   ROUGE-L: 0.3257
+2025-12-25 17:50:19,974 - INFO -   -> No improvement in BLEU for 1 epoch(s)
+2025-12-25 17:52:12,085 - INFO - Epoch 18/100: Computing validation loss and metrics...
+2025-12-25 17:52:54,242 - INFO - Using default tokenizer.
+2025-12-25 17:52:54,862 - INFO - Epoch 18/100:
+2025-12-25 17:52:54,865 - INFO -   Train loss: 1.4333
+2025-12-25 17:52:54,866 - INFO -   Validation loss: 3.9746
+2025-12-25 17:52:54,866 - INFO -   BLEU: 0.0541
+2025-12-25 17:52:54,866 - INFO -   METEOR: 0.2352
+2025-12-25 17:52:54,866 - INFO -   ROUGE-1: 0.3851
+2025-12-25 17:52:54,866 - INFO -   ROUGE-2: 0.1429
+2025-12-25 17:52:54,866 - INFO -   ROUGE-L: 0.3219
+2025-12-25 17:52:54,866 - INFO -   -> No improvement in BLEU for 2 epoch(s)
+2025-12-25 17:54:46,464 - INFO - Epoch 19/100: Computing validation loss and metrics...
+2025-12-25 17:55:29,370 - INFO - Using default tokenizer.
+2025-12-25 17:55:29,998 - INFO - Epoch 19/100:
+2025-12-25 17:55:29,999 - INFO -   Train loss: 1.4100
+2025-12-25 17:55:29,999 - INFO -   Validation loss: 3.9812
+2025-12-25 17:55:29,999 - INFO -   BLEU: 0.0580
+2025-12-25 17:55:29,999 - INFO -   METEOR: 0.2473
+2025-12-25 17:55:30,000 - INFO -   ROUGE-1: 0.3996
+2025-12-25 17:55:30,000 - INFO -   ROUGE-2: 0.1479
+2025-12-25 17:55:30,000 - INFO -   ROUGE-L: 0.3348
+2025-12-25 17:55:30,000 - INFO -   -> No improvement in BLEU for 3 epoch(s)
+2025-12-25 17:55:30,000 - INFO -   -> Learning rate reduced from 0.0005 to 0.00025 due to plateau
+2025-12-25 17:57:21,453 - INFO - Epoch 20/100: Computing validation loss and metrics...
+2025-12-25 17:58:03,685 - INFO - Using default tokenizer.
+2025-12-25 17:58:04,291 - INFO - Epoch 20/100:
+2025-12-25 17:58:04,292 - INFO -   Train loss: 1.3581
+2025-12-25 17:58:04,292 - INFO -   Validation loss: 4.0005
+2025-12-25 17:58:04,292 - INFO -   BLEU: 0.0555
+2025-12-25 17:58:04,292 - INFO -   METEOR: 0.2435
+2025-12-25 17:58:04,292 - INFO -   ROUGE-1: 0.3978
+2025-12-25 17:58:04,293 - INFO -   ROUGE-2: 0.1496
+2025-12-25 17:58:04,293 - INFO -   ROUGE-L: 0.3330
+2025-12-25 17:58:04,293 - INFO -   -> No improvement in BLEU for 1 epoch(s)
+2025-12-25 17:59:55,635 - INFO - Epoch 21/100: Computing validation loss and metrics...
+2025-12-25 18:00:38,783 - INFO - Using default tokenizer.
+2025-12-25 18:00:39,394 - INFO - Epoch 21/100:
+2025-12-25 18:00:39,394 - INFO -   Train loss: 1.3413
+2025-12-25 18:00:39,394 - INFO -   Validation loss: 4.0038
+2025-12-25 18:00:39,395 - INFO -   BLEU: 0.0548
+2025-12-25 18:00:39,395 - INFO -   METEOR: 0.2433
+2025-12-25 18:00:39,395 - INFO -   ROUGE-1: 0.3927
+2025-12-25 18:00:39,395 - INFO -   ROUGE-2: 0.1483
+2025-12-25 18:00:39,395 - INFO -   ROUGE-L: 0.3301
+2025-12-25 18:00:39,395 - INFO -   -> No improvement in BLEU for 2 epoch(s)
+2025-12-25 18:02:30,928 - INFO - Epoch 22/100: Computing validation loss and metrics...
+2025-12-25 18:03:13,634 - INFO - Using default tokenizer.
+2025-12-25 18:03:14,258 - INFO - Epoch 22/100:
+2025-12-25 18:03:14,258 - INFO -   Train loss: 1.3286
+2025-12-25 18:03:14,259 - INFO -   Validation loss: 4.0323
+2025-12-25 18:03:14,259 - INFO -   BLEU: 0.0565
+2025-12-25 18:03:14,259 - INFO -   METEOR: 0.2472
+2025-12-25 18:03:14,259 - INFO -   ROUGE-1: 0.3933
+2025-12-25 18:03:14,259 - INFO -   ROUGE-2: 0.1502
+2025-12-25 18:03:14,259 - INFO -   ROUGE-L: 0.3298
+2025-12-25 18:03:14,259 - INFO -   -> No improvement in BLEU for 3 epoch(s)
+2025-12-25 18:03:14,260 - INFO - Early stopping triggered after 3 epochs without BLEU improvement
+2025-12-25 18:03:14,260 - INFO - ================================================================================
+2025-12-25 18:03:14,260 - INFO - Loading best model (Epoch 13, BLEU: 0.0583, validation loss: 3.8663)
+2025-12-25 18:03:15,401 - INFO - Computing test set loss and metrics...
+2025-12-25 18:03:39,245 - INFO - Using default tokenizer.
+2025-12-25 18:03:39,590 - INFO - ================================================================================
+2025-12-25 18:03:39,590 - INFO - Test set results:
+2025-12-25 18:03:39,591 - INFO -   Test loss: 4.7720
+2025-12-25 18:03:39,591 - INFO -   BLEU: 0.0393
+2025-12-25 18:03:39,591 - INFO -   METEOR: 0.2039
+2025-12-25 18:03:39,591 - INFO -   ROUGE-1: 0.3565
+2025-12-25 18:03:39,591 - INFO -   ROUGE-2: 0.1146
+2025-12-25 18:03:39,591 - INFO -   ROUGE-L: 0.2833
+2025-12-25 18:03:39,591 - INFO - ================================================================================
+2025-12-25 18:03:40,582 - INFO - Training metrics plot saved to runs/20251225-170530-rnn-AdamW-lr0.002-wd0.0001-bs128-epoch100-additive-layer2-emb512-hidden512-relativePos-rmsnorm-teacher_forcing-beam/training_metrics.png
+2025-12-25 18:03:40,582 - INFO - Training completed!
